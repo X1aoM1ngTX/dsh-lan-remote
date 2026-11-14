@@ -15,10 +15,10 @@ It appears under **Settings → LAN remote**.
 
 ## Install
 
-Through `plugin_manager` (pin a commit for a predictable upgrade):
+Through `plugin_manager` (pin a commit for a predictable upgrade; `858dd4e` is tag `v1.0.0`):
 
 ```text
-plugin_manager action=install_bundle target=git+https://github.com/X1aoM1ngTX/dsh-lan-remote.git#<commit>
+plugin_manager action=install_bundle target=git+https://github.com/X1aoM1ngTX/dsh-lan-remote.git#858dd4e10a7d80bd19d252820eb23ef7705bd104
 ```
 
 Or the default branch:

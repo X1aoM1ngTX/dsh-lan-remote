@@ -15,10 +15,10 @@
 
 ## 安装
 
-在 DSH 里用 `plugin_manager` 安装（推荐指向一个 commit，升级可控）：
+在 DSH 里用 `plugin_manager` 安装（推荐指向一个 commit，升级可控；下面的 `858dd4e` 对应标签 `v1.0.0`）：
 
 ```text
-plugin_manager action=install_bundle target=git+https://github.com/X1aoM1ngTX/dsh-lan-remote.git#<commit>
+plugin_manager action=install_bundle target=git+https://github.com/X1aoM1ngTX/dsh-lan-remote.git#858dd4e10a7d80bd19d252820eb23ef7705bd104
 ```
 
 也可以先用默认分支：
