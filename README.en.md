@@ -1,4 +1,4 @@
-# LAN remote (`dsh-lan-remote`)
+# LAN remote (`@x1aom1ngtx/dsh-lan-remote`)
 
 Use this computer's DSH from another computer's browser on the same LAN, and keep the links of other computers' DSH for one-click access.
 
@@ -15,16 +15,24 @@ It appears under **Settings → LAN remote**.
 
 ## Install
 
-Through `plugin_manager` (pin a commit for a predictable upgrade; `858dd4e` is tag `v1.0.0`):
+Through `plugin_manager`:
+
+**From npm (recommended)** — a prebuilt install with no GitHub connectivity check, and the configured mirrors are tried in turn.
+
+```text
+plugin_manager action=install_bundle target=@x1aom1ngtx/dsh-lan-remote@1.0.0
+```
+
+Or without a version:
+
+```text
+plugin_manager action=install_bundle target=@x1aom1ngtx/dsh-lan-remote
+```
+
+**From the GitHub source** (pin a commit; `858dd4e` is tag `v1.0.0`):
 
 ```text
 plugin_manager action=install_bundle target=git+https://github.com/X1aoM1ngTX/dsh-lan-remote.git#858dd4e10a7d80bd19d252820eb23ef7705bd104
-```
-
-Or the default branch:
-
-```text
-plugin_manager action=install_bundle target=git+https://github.com/X1aoM1ngTX/dsh-lan-remote.git
 ```
 
 For local development, point at the directory:
@@ -73,6 +81,7 @@ So **DSH still owns authentication**; the gateway only rewrites addresses and ad
 ## Sharing and listing
 
 - The repository root is the package root, and `package.json` declares `dsh.bundle`, so DSH can install it as-is.
+- Published on npm as `@x1aom1ngtx/dsh-lan-remote` (prebuilt install; storefronts show its download count).
 - [docs/awesome-dsh-plugin.yml](docs/awesome-dsh-plugin.yml) holds the community directory entry: copy it to `data/plugins/X1aoM1ngTX__dsh-lan-remote.yml` in a fork of `awesome-dsh-plugin` and open a pull request.
 - Once listed, community indexes (such as `aaamechanic.github.io/dsh-plugin-market/index.json`) mirror it automatically; anyone can also host a format-1 index and add its URL under **Plugins → Discover → Add index source**.
 

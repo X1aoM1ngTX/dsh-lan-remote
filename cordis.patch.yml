@@ -1,4 +1,4 @@
 # Bundle patch: one Host row owns the LAN gateway and the settings page's API.
 - insert:
     - id: lan-remote
-      name: dsh-lan-remote
+      name: '@x1aom1ngtx/dsh-lan-remote'

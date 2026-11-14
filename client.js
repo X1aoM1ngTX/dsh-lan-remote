@@ -6,13 +6,13 @@
  */
 
 window.__ModuleLoader__.load({
-  id: 'dsh-lan-remote',
+  id: '@x1aom1ngtx/dsh-lan-remote',
   factory(require) {
     const React = require('react');
     const h = React.createElement;
     const { useCallback, useEffect, useState } = React;
 
-    const NS = 'dsh-lan-remote';
+    const NS = '@x1aom1ngtx/dsh-lan-remote';
     const API = '/__lan_remote/api';
 
     const ZH = {

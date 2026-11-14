@@ -1,4 +1,4 @@
-# 局域网远程（dsh-lan-remote）
+# 局域网远程（@x1aom1ngtx/dsh-lan-remote）
 
 在同一个局域网内，用另一台电脑的浏览器使用这台电脑上的 DSH；也可以在这个页面里保存、测试并一键打开其他电脑的 DSH。
 
@@ -15,16 +15,24 @@
 
 ## 安装
 
-在 DSH 里用 `plugin_manager` 安装（推荐指向一个 commit，升级可控；下面的 `858dd4e` 对应标签 `v1.0.0`）：
+在 DSH 里用 `plugin_manager` 安装。
+
+**从 npm 安装（推荐）**：装的是预构建包，不走 GitHub 连通性检查，国内会依次尝试 npmmirror 等镜像。
+
+```text
+plugin_manager action=install_bundle target=@x1aom1ngtx/dsh-lan-remote@1.0.0
+```
+
+也可以不写版本，取 latest：
+
+```text
+plugin_manager action=install_bundle target=@x1aom1ngtx/dsh-lan-remote
+```
+
+**从 GitHub 源码安装**（指向 commit，升级可控；下面的 `858dd4e` 对应标签 `v1.0.0`）：
 
 ```text
 plugin_manager action=install_bundle target=git+https://github.com/X1aoM1ngTX/dsh-lan-remote.git#858dd4e10a7d80bd19d252820eb23ef7705bd104
-```
-
-也可以先用默认分支：
-
-```text
-plugin_manager action=install_bundle target=git+https://github.com/X1aoM1ngTX/dsh-lan-remote.git
 ```
 
 本地开发时直接指向目录：
@@ -73,6 +81,7 @@ plugin_manager action=install_bundle target=/absolute/path/to/dsh-lan-remote
 ## 分享与收录
 
 - 仓库根目录就是包根，`package.json` 已声明 `dsh.bundle`，可直接被 DSH 安装。
+- 已发布到 npm：`@x1aom1ngtx/dsh-lan-remote`（预构建安装，市场里会显示下载量）。
 - 已在 [docs/awesome-dsh-plugin.yml](docs/awesome-dsh-plugin.yml) 准备好社区目录条目：把它复制成 `awesome-dsh-plugin` 仓库里的 `data/plugins/X1aoM1ngTX__dsh-lan-remote.yml`，然后提 PR。
 - 目录收录后，社区索引（如 `aaamechanic.github.io/dsh-plugin-market/index.json`）会自动镜像；用户也可以自建 format 1 索引，把地址加到 **插件 → 发现 → 添加索引源**。
 

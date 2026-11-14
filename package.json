@@ -1,5 +1,5 @@
 {
-  "name": "dsh-lan-remote",
+  "name": "@x1aom1ngtx/dsh-lan-remote",
   "version": "1.0.0",
   "description": "Share this DSH over the LAN and open other computers' DSH from one settings page.",
   "type": "module",
