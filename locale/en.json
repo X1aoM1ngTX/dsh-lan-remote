@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "LAN remote",
+    "description": "Share this DSH over the LAN and open other computers' DSH from one settings page.",
+    "detail": "docs/DETAIL.en.md"
+  }
+}

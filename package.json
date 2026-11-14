@@ -1,0 +1,61 @@
+{
+  "name": "dsh-lan-remote",
+  "version": "1.0.0",
+  "description": "Share this DSH over the LAN and open other computers' DSH from one settings page.",
+  "type": "module",
+  "license": "MIT",
+  "author": "X1aoM1ngTX",
+  "homepage": "https://github.com/X1aoM1ngTX/dsh-lan-remote#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/X1aoM1ngTX/dsh-lan-remote.git"
+  },
+  "bugs": {
+    "url": "https://github.com/X1aoM1ngTX/dsh-lan-remote/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "lan",
+    "remote",
+    "gateway"
+  ],
+  "engines": {
+    "dsh": ">=0.2.2-rc.1 <0.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "assets/*.png",
+    "docs/*.md",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  }
+}

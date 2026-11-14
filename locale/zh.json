@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "局域网远程",
+    "description": "把本机 DSH 共享到局域网，并在一页里保存、测试和打开其他电脑上的 DSH。",
+    "detail": "docs/DETAIL.zh.md"
+  }
+}
