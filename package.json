@@ -41,6 +41,7 @@
     "icon.svg",
     "assets/*.png",
     "docs/*.md",
+    "screenshots.json",
     "README.md",
     "README.en.md",
     "LICENSE"
